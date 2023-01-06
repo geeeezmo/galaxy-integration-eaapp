@@ -257,9 +257,9 @@ def get_local_content_path():
     platform_id = platform.system()
 
     if platform_id == "Windows":
-        local_content_path = os.path.join(os.environ.get("ProgramData", os.environ.get("SystemDrive", "C:") + R"\ProgramData"), "Origin", "LocalContent")
+        local_content_path = os.path.join(os.environ.get("ProgramData", os.environ.get("SystemDrive", "C:") + R"\ProgramData"), "EA Desktop", "InstallData")
     elif platform_id == "Darwin":
-        local_content_path = os.path.join(os.sep, "Library", "Application Support", "Origin", "LocalContent")
+        local_content_path = os.path.join(os.sep, "Library", "Application Support", "EA Desktop", "InstallData")
     else:
         local_content_path = "."  # fallback for testing on another platform
         # raise NotImplementedError("Not implemented on {}".format(platform_id))
