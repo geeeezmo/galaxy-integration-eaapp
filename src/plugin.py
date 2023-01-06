@@ -434,7 +434,7 @@ class OriginPlugin(Plugin):
         if is_uri_handler_installed("origin2"):
             uri = "origin2://game/launch?offerIds={}&autoDownload=1".format(game_id)
         else:
-            uri = "https://www.origin.com/download"
+            uri = "https://www.ea.com/ea-app"
 
         self._open_uri(uri)
 
@@ -459,7 +459,7 @@ class OriginPlugin(Plugin):
         elif is_uri_handler_installed("origin2"):
             uri = f"origin2://game/download?offerId={game_id}"
         else:
-            uri = "https://www.origin.com/download"
+            uri = "https://www.ea.com/ea-app"
 
         self._open_uri(uri)
 
